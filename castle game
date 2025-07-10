@@ -1,0 +1,38 @@
+# visiting  a castle
+Main_Door=("welcome to the castle you can enter by using a secret passkey to door 2")
+print(Main_Door)
+
+# clue
+clue=("there is a secret passkey to open the Door2")
+print(clue)
+
+# secret passkey hint
+secret_passkey_hint=("it should be divisible by both 3 and 5")
+print(secret_passkey_hint)
+
+# Door 2 - Get user input for the passkey
+print("Welcome to Door 2")
+try:
+    passkey = int(input("Enter the secret passkey (a number): "))
+
+    # conditions
+    if (passkey % 3 == 0) and (passkey % 5 == 0):
+        print("Welcome to Door 2!")
+    elif passkey % 3 == 0:
+        print("You are close! The passkey is divisible by 3, but not 5. Keep trying.")
+    elif passkey % 5 == 0:
+        print("You are close! The passkey is divisible by 5, but not 3. Keep trying.")
+    else:
+        print("Incorrect passkey. Try again.")
+
+except ValueError:
+    print("Invalid input. Please enter a number for the passkey.")
+
+
+#output
+welcome to the castle you can enter by using a secret passkey to door 2
+there is a secret passkey to open the Door2
+it should be divisible by both 3 and 5
+Welcome to Door 2
+Enter the secret passkey (a number): 15
+Welcome to Door 2!
