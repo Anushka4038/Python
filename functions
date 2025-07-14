@@ -1,0 +1,10 @@
+def sum(a,b):
+  return a+b
+
+# taking value from the user
+a=int(input("enter,a"))
+b=int(input("enter,b"))
+
+
+#print the sum of a and b
+print("sum =",sum(a,b))
